@@ -28,7 +28,7 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd(HOME .. "/.config/waybar/launch.sh")
 
     -- Start polkit daemon
-    hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
+    hl.exec_cmd("/usr/libexec/kf6/polkit-kde-authentication-agent-1")
 
     -- Restore wallpaper (skip for quickshell — handled inside ml4w-autostart)
     if wallpaper_app ~= "quickshell" then

@@ -18,5 +18,8 @@ end
 -- Qt uygulamalarının GTK ikon ve renk temasını baz alması için köprü
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
+-- Hybrid GPU (AMD Cezanne iGPU primary, NVIDIA RTX 3050 Ti secondary)
+hl.env("AQ_DRM_DEVICES", "/dev/dri/by-path/pci-0000:05:00.0-card:/dev/dri/by-path/pci-0000:01:00.0-card")
+
 local name = "default.lua"
 load_variant(name,"environments")

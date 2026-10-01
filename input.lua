@@ -17,8 +17,8 @@ hl.config({
 
         touchpad     = {
             natural_scroll          = true,
-            ["tap-to-click"]        = true,
-            ["tap-and-drag"]        = true,
+            tap_to_click            = true,
+            tap_and_drag            = true,
             disable_while_typing    = true,
             clickfinger_behavior    = true,
             middle_button_emulation = true,

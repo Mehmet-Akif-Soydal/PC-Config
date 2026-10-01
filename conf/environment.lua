@@ -15,11 +15,44 @@ if settings then
     settings:close()
 end
 
--- Qt uygulamalarının GTK ikon ve renk temasını baz alması için köprü
-hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+-- Değişkenler bir tablo formatında tanımlanır:
+local env_variables = {
+    -- XDG & Session
+    { "XDG_CURRENT_DESKTOP", "Hyprland" },
+    { "XDG_SESSION_DESKTOP", "Hyprland" },
+    { "XDG_SESSION_TYPE", "wayland" },
+    { "DESKTOP_SESSION", "Hyprland" },
 
--- Hybrid GPU (AMD Cezanne iGPU primary, NVIDIA RTX 3050 Ti secondary)
-hl.env("AQ_DRM_DEVICES", "/dev/dri/by-path/pci-0000:05:00.0-card:/dev/dri/by-path/pci-0000:01:00.0-card")
+    -- Qt & KDE (Breeze Dark ve yerel KDE platform desteği)
+    { "QT_QPA_PLATFORM", "wayland;xcb" },
+    { "QT_QPA_PLATFORMTHEME", "kde" },
+    { "QT_WAYLAND_DISABLE_WINDOWDECORATION", "1" },
+
+    -- Wayland & Ozone
+    { "OZONE_PLATFORM", "wayland" },
+    { "ELECTRON_OZONE_PLATFORM_HINT", "wayland" },
+    { "MOZ_ENABLE_WAYLAND", "1" },
+    { "SDL_VIDEODRIVER", "wayland" },
+    { "CLUTTER_BACKEND", "wayland" },
+    { "GDK_BACKEND", "wayland,x11,*" },
+    { "GDK_SCALE", "1" },
+
+    -- Cursor
+    { "XCURSOR_THEME", "Bibata-Modern-Ice" },
+    { "XCURSOR_SIZE", "24" },
+    { "HYPRCURSOR_SIZE", "24" },
+
+    -- Quickshell
+    { "QS_NO_RELOAD_POPUP", "1" },
+
+    -- Hybrid GPU (AMD Cezanne iGPU birincil, NVIDIA RTX 3050 Ti ikincil)
+    { "AQ_DRM_DEVICES", "/dev/dri/by-path/pci-0000:05:00.0-card:/dev/dri/by-path/pci-0000:01:00.0-card" },
+}
+
+-- Değişkenleri Hyprland ortamına uygula
+for _, entry in ipairs(env_variables) do
+    hl.env(entry[1], entry[2])
+end
 
 local name = "default.lua"
 load_variant(name,"environments")

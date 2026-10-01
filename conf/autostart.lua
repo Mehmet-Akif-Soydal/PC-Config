@@ -10,7 +10,7 @@ hl.on("hyprland.start", function ()
     end
 
     -- Export variables to systemd
-    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORMTHEME")
 
     -- Restart portals so they catch the environment
     hl.exec_cmd("~/.config/hypr/scripts/portal-fix.sh")

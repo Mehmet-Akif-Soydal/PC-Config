@@ -45,8 +45,10 @@ local env_variables = {
     -- Quickshell
     { "QS_NO_RELOAD_POPUP", "1" },
 
-    -- Hybrid GPU (AMD Cezanne iGPU birincil, NVIDIA RTX 3050 Ti ikincil)
-    { "AQ_DRM_DEVICES", "/dev/dri/by-path/pci-0000:05:00.0-card:/dev/dri/by-path/pci-0000:01:00.0-card" },
+    -- Hybrid GPU: Aquamarine udev üzerinden AMD iGPU (boot_vga=1) ve NVIDIA dGPU'yu
+    -- otomatik olarak doğru sırada tanır. by-path içindeki ':' karakterleri Aquamarine'in
+    -- ayraç ayrıştırmasını bozup çökmeye yol açtığı için elle AQ_DRM_DEVICES tanımlanmaz.
+    -- { "AQ_DRM_DEVICES", "/dev/dri/by-path/pci-0000:05:00.0-card:/dev/dri/by-path/pci-0000:01:00.0-card" },
 }
 
 -- Değişkenleri Hyprland ortamına uygula

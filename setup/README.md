@@ -28,7 +28,7 @@ git clone <github-depo-adresiniz> ~/.config/hypr
 
 # 2. Kurulum betiğini çalıştırın
 cd ~/.config/hypr
-./install.sh
+./setup/install.sh
 ```
 
 ### `install.sh` Neler Yapar?

@@ -50,6 +50,9 @@ hl.on("hyprland.start", function ()
     -- Load cliphist history
     hl.exec_cmd("wl-paste --watch cliphist store")
 
+    -- Start EasyEffects background service
+    hl.exec_cmd("easyeffects --service-mode")
+
     -- Start autostart cleanup
     hl.exec_cmd("~/.config/hypr/scripts/cleanup.sh")
 end)

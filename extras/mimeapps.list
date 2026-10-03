@@ -1,0 +1,35 @@
+[Added Associations]
+application/json=code.desktop;app.zen_browser.zen.desktop;io.gitlab.librewolf-community.desktop;libreoffice-writer.desktop;org.kde.kate.desktop;okularApplication_txt.desktop;
+application/pdf=okularApplication_pdf.desktop;libreoffice-draw.desktop;Stirling-PDF.desktop;app.zen_browser.zen.desktop;io.gitlab.librewolf-community.desktop;org.inkscape.Inkscape.desktop;
+application/x-msdownload=wine.desktop;com.usebottles.bottles.desktop;protontricks-launch.desktop;
+application/x-rpm=org.dnf.AppCenter.desktop;org.kde.ark.desktop;nobara-codec-wizard.desktop;
+application/zip=org.kde.ark.desktop;sh.ppy.osu.desktop;org.prismlauncher.PrismLauncher.desktop;
+image/jpeg=org.gnome.Shotwell-Viewer.desktop;com.brave.Browser.desktop;brave-browser.desktop;okularApplication_kimgio.desktop;
+image/png=org.gnome.Shotwell-Viewer.desktop;org.gnome.gThumb.desktop;com.brave.Browser.desktop;brave-browser.desktop;okularApplication_kimgio.desktop;
+text/css=code.desktop;okularApplication_txt.desktop;libreoffice-writer.desktop;org.kde.kate.desktop;
+text/plain=org.kde.kate.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;
+video/mp4=org.videolan.VLC.desktop;wine-extension-f4v.desktop;
+x-scheme-handler/http=app.zen_browser.zen.desktop;
+x-scheme-handler/https=app.zen_browser.zen.desktop;
+x-scheme-handler/mailto=me.proton.Mail.desktop;
+
+[Default Applications]
+application/json=code.desktop;
+application/pdf=okularApplication_pdf.desktop;
+application/x-msdownload=wine.desktop;
+application/x-rpm=org.dnf.AppCenter.desktop;
+application/zip=org.kde.ark.desktop;
+image/jpeg=org.gnome.Shotwell-Viewer.desktop;
+image/png=org.gnome.Shotwell-Viewer.desktop;
+text/css=code.desktop;
+text/html=brave-browser.desktop
+text/plain=org.kde.kate.desktop;
+video/mp4=org.videolan.VLC.desktop;
+x-scheme-handler/curseforge=org.prismlauncher.PrismLauncher.desktop
+x-scheme-handler/discord-529029853471834113=discord-529029853471834113.desktop
+x-scheme-handler/heroic=com.heroicgameslauncher.hgl.desktop
+x-scheme-handler/http=app.zen_browser.zen.desktop;
+x-scheme-handler/https=app.zen_browser.zen.desktop;
+x-scheme-handler/mailto=me.proton.Mail.desktop;
+x-scheme-handler/stirlingpdf=stirling-pdf-handler.desktop
+inode/directory=org.kde.dolphin.desktop

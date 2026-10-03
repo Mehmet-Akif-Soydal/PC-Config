@@ -53,6 +53,9 @@ hl.on("hyprland.start", function ()
     -- Start EasyEffects background service
     hl.exec_cmd("easyeffects --service-mode")
 
+    -- Start KDE Connect
+    hl.exec_cmd("kdeconnect-indicator")
+
     -- Start autostart cleanup
     hl.exec_cmd("~/.config/hypr/scripts/cleanup.sh")
 end)

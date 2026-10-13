@@ -24,7 +24,7 @@ Sıfır bir kurulumdan sonra sistemi tek bir komutla ayağa kaldırmak için:
 
 ```bash
 # 1. Depoyu klonlayın
-git clone <github-depo-adresiniz> ~/.config/hypr
+git clone https://github.com/Mehmet-Akif-Soydal/PC-Config.git ~/.config/hypr
 
 # 2. Kurulum betiğini çalıştırın
 cd ~/.config/hypr

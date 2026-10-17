@@ -4,8 +4,14 @@ hl.window_rule({
     idle_inhibit = "fullscreen"
 })
 
--- Sadece aktif pencerelerde (odaklı) uyku engelleyici opsiyonel kural
+-- Zen Browser açık olduğu sürece (toplantı, ders, video vb.) ekranın kapanmasını engelle
 hl.window_rule({
-    match = { class = "^(zen-alpha|firefox|chromium|mpv|vlc|Google-chrome)$" },
+    match = { class = ".*zen.*" },
+    idle_inhibit = "always"
+})
+
+-- Diğer tarayıcılar ve medya oynatıcılar için odak kuralı
+hl.window_rule({
+    match = { class = "^(firefox|chromium|mpv|vlc|Google-chrome)$" },
     idle_inhibit = "focus"
 })

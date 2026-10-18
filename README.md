@@ -100,6 +100,7 @@ chmod +x setup/install.sh
 | `SUPER + B` | Tarayıcıyı Aç |
 | `SUPER + E` | Dolphin Dosya Yöneticisini Aç |
 | `SUPER + C` | Hesap Makinesini Aç |
+| `SUPER + O` | Obsidian Not Defterini Aç (Wayland) |
 | `SUPER + CTRL + C` | Takvimi Aç / Kapat |
 | `SUPER + CTRL + RETURN` | Uygulama Menüsünü Aç (Launcher) |
 | `SUPER + V` | Pano Geçmişini Aç (Cliphist) |
